@@ -7,4 +7,4 @@ RUN pip install -e .
 RUN pip install fastapi uvicorn
 RUN apt-get update && apt-get install -y inotify-tools ffmpeg
 
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "src.birdnetlib.api:app", "--host", "0.0.0.0", "--port", "8080"]
